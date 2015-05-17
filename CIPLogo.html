@@ -1,0 +1,125 @@
+<html>
+
+<style>
+
+     
+        
+#bird1{
+   
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    height: 0px;
+    
+    opacity: 1.0;
+     z-index: 3;
+
+    -moz-transition: left 2s, top 2s, width 2s, height 2s, opacity 2s;
+    -moz-transition-timing-function: linear;
+} 
+        
+#trigger:hover #bird1 {
+  
+    left: 33px;
+    top: 25px;
+    height: 45px;
+    
+    opacity: 1.0;
+    z-index: 3;
+}        
+        
+        
+       
+        
+        
+#bird2{
+    
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    height: 60px;
+    
+    opacity: 0;
+    z-index: 3;
+   
+    -moz-transition: left 2s, top 2s, width 2s, height 2s, opacity 0s;
+    -moz-transition-timing-function: linear;
+    -moz-transition-delay: 2s;
+}        
+        
+
+
+#trigger:hover #bird2 {
+    left: 93px;
+    top: 26px;
+    //width:60px;
+    height: 65px;
+    
+    opacity: 1;
+    z-index: 3;
+
+}
+        
+#bird3 {
+    
+    position: absolute;
+    
+    left: 90px;
+    top: 30px;
+    height: 80px;
+    
+    opacity: 0;
+    z-index: 3;
+
+    -moz-transition: left 2s, top 2s, width 2s, height 2s, opacity 0.1s;
+    -moz-transition-timing-function: linear;
+    //-moz-transition: opacity 0.1s;
+    -moz-transition-delay: 4s;
+}
+        
+#trigger:hover #bird3 {
+  
+    left: 180px;
+    top: 18px;
+    height: 100px;
+    
+    opacity: 1.0;
+       z-index: 3;
+      
+}        
+
+#svgbird{
+    position: absolute;
+    
+    left: 182px;
+    top: 18px;
+    height: 100px;}
+        
+}
+        
+</style>
+    
+<body onload="triggerflight()">
+
+    <div id="trigger"> 
+
+        <img  id="bird1" src="Bird.svg">
+        <img  id="bird2" src="Bird.svg">
+        <img  id="bird3" src="Bird.svg">
+    
+        <img src="CIP_Bannernb.jpg">
+    
+    </div>
+    
+</body>
+
+    <script>
+    
+    function triggerflight() {
+        document.getElementsByClassName("example");    }
+        
+        
+    </script>
+
+
+</html>
